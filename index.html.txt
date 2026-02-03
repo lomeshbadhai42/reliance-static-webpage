@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliance Trends Fashion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd47") no-repeat center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 30px 0 10px;
+            font-size: 28px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #d32f2f;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 8px 15px;
+            background: #d32f2f;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Reliance Trends</h1>
+    <p>Discover the Latest Fashion</p>
+</header>
+
+<nav>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">Kids</a>
+    <a href="#">Accessories</a>
+</nav>
+
+<div class="banner">
+    Big Fashion Sale – Up to 50% Off!
+</div>
+
+<h2 class="section-title">Trending Products</h2>
+
+<div class="products">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1520975928316-56a0c7bda9c3" alt="Men Shirt">
+        <h3>Men Casual Shirt</h3>
+        <p class="price">₹899</p>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d" alt="Women Dress">
+        <h3>Women Summer Dress</h3>
+        <p class="price">₹1199</p>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37" alt="Kids Wear">
+        <h3>Kids Fashion Set</h3>
+        <p class="price">₹699</p>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" alt="Jeans">
+        <h3>Denim Jeans</h3>
+        <p class="price">₹1499</p>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+</div>
+
+<footer>
+    © 2026 Reliance Trends | Fashion for Everyone
+</footer>
+
+</body>
+</html>
