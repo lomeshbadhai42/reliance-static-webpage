@@ -6,20 +6,21 @@ on:
       - main
   workflow_dispatch:
 
+permissions:          
+  id-token: write
+  contents: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout your code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2️⃣ Zip all files in the repo
       - name: Archive static files
         run: zip -r static-site.zip .
 
-      # 3️⃣ Login to Azure
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -27,7 +28,6 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6A3045258CF44C3185E29316CA8F8245 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_AB9E496E2D3448B8BB2A92A14E1BFBD1 }}
 
-      # 4️⃣ Deploy the zip to your Web App
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
