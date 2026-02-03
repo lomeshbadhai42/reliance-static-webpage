@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
 
-permissions:          
+permissions:          # ✅ required for azure/login@v2
   id-token: write
   contents: read
 
